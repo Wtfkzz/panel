@@ -1,616 +1,705 @@
 <!DOCTYPE html>
-<html lang="tr">
+
+<html lang="tr" data-bs-theme="dark" data-theme="ottoman">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belsis Zorbalık Hizmeti 2026 | En İyi Siber Zorbalık Hizmeti (VPN İLE GİRİŞ YAPINIZ)</title>
-    <meta name="description"
-        content="🔥 Bedava Sorgu Paneli 2026 - Türkiye'nin En İyi Ücretsiz Sorgu Paneli! Sorgu Paneli, GSM Sorgu Paneli, Adres Sorgu Paneli. Online Sorgu Paneli ile hızlı sorgulama.">
-    <meta name="keywords"
-        content="sorgu paneli, bedava sorgu paneli, ücretsiz sorgu paneli, online sorgu paneli, tc sorgu paneli, gsm sorgu paneli, adres sorgu paneli, tapu sorgu paneli, kimlik sorgu paneli, telefon sorgu paneli, en iyi sorgu paneli, hızlı sorgu paneli, güvenli sorgu paneli, sorgu paneli 2026, türkiye sorgu paneli">
 
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tetkik-i Esâmî</title>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="MySite">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- Google Fonts - dinamik içerik, SRI desteklemiyor -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@500;600;700&family=Cinzel+Decorative:wght@400;700;900&family=Scheherazade+New:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5.3.3 CSS + SRI -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=VT323&display=swap');
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Inter', 'VT323', monospace, sans-serif;
-        background: #050505;
-        min-height: 100vh;
-        color: #e0f0ff;
-        overflow-x: hidden;
-    }
-
-    .ai-grid {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.06;
-        background-image:
-            linear-gradient(rgba(0, 240, 255, 0.08) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0, 240, 255, 0.08) 1px, transparent 1px);
-        background-size: 5px 5px;
-        pointer-events: none;
-        animation: gridPulse 5s ease-in-out infinite;
-    }
-
-    @keyframes gridPulse {
-
-        0%,
-        100% {
-            opacity: 0.06;
-        }
-
-        50% {
-            opacity: 0.12;
-        }
-    }
-
-    .crt-scan {
-        position: fixed;
-        inset: 0;
-        background: repeating-linear-gradient(to bottom,
-                transparent 0%,
-                rgba(0, 0, 0, 0.12) 1px,
-                transparent 2px);
-        pointer-events: none;
-        opacity: 0.5;
-        animation: scan 10s linear infinite;
-    }
-
-    @keyframes scan {
-        0% {
-            transform: translateY(-100%);
-        }
-
-        100% {
-            transform: translateY(100%);
-        }
-    }
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        padding: 20px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .main-panel {
-        background: rgba(8, 8, 18, 0.88);
-        border: 1px solid rgba(0, 240, 255, 0.14);
-        border-radius: 12px;
-        padding: 60px 40px;
-        max-width: 450px;
-        width: 100%;
-        backdrop-filter: blur(18px);
-        box-shadow: 0 0 35px rgba(0, 240, 255, 0.18);
-        position: relative;
-    }
-
-    .main-panel::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #00f0ff, transparent);
-        opacity: 0.4;
-    }
-
-    .ai-header {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .ai-title {
-        font-family: 'VT323', monospace;
-        font-size: 2.1rem;
-        color: #00f0ff;
-        text-shadow: 0 0 12px #00f0ff77;
-        letter-spacing: 3px;
-        margin-bottom: 8px;
-    }
-
-    .ai-subtitle {
-        font-size: 0.95rem;
-        color: #ff00aa;
-        text-shadow: 0 0 8px #ff00aa55;
-        font-weight: 300;
-        letter-spacing: 1.5px;
-    }
-
-    .query-categories {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .category {
-        background: rgba(0, 0, 0, 0.45);
-        border: 1px solid rgba(0, 240, 255, 0.12);
-        border-radius: 10px;
-        overflow: hidden;
-        transition: all 0.3s ease;
-    }
-
-    .category:hover {
-        border-color: rgba(0, 240, 255, 0.3);
-        box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
-    }
-
-    .category-header {
-        padding: 18px 24px;
-        background: rgba(0, 240, 255, 0.06);
-        border-bottom: 1px solid rgba(0, 240, 255, 0.14);
-        cursor: pointer;
-        transition: all 0.3s ease;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .category-header:hover {
-        background: rgba(0, 240, 255, 0.1);
-    }
-
-    .category-title {
-        font-size: 1.05rem;
-        font-weight: 500;
-        color: #e0f0ff;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .category-icon {
-        font-size: 1.3rem;
-        color: #00f0ff;
-        filter: drop-shadow(0 0 5px currentColor);
-    }
-
-    .business-category {
-        border: 1px solid rgba(255, 0, 170, 0.25);
-        background: rgba(30, 5, 35, 0.5);
-    }
-
-    .business-category .category-header {
-        background: rgba(255, 0, 170, 0.09);
-        border-bottom: 1px solid rgba(255, 0, 170, 0.2);
-    }
-
-    .business-category .category-title {
-        color: #ff99dd;
-    }
-
-    .business-category .category-icon {
-        color: #ff00aa;
-    }
-
-    .category-arrow {
-        font-size: 1rem;
-        color: rgba(0, 240, 255, 0.6);
-        transition: transform 0.3s ease;
-    }
-
-    .category.expanded .category-arrow {
-        transform: rotate(90deg);
-    }
-
-    .query-list {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease;
-    }
-
-    .category.expanded .query-list {
-        max-height: 1400px;
-        /* Tüm VIP'leri kapsayacak kadar büyük */
-    }
-
-    .query-item {
-        background: rgba(0, 0, 0, 0.4);
-        border-bottom: 1px solid rgba(0, 240, 255, 0.08);
-        padding: 16px 24px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-    }
-
-    .query-item:last-child {
-        border-bottom: none;
-    }
-
-    .query-item:hover {
-        background: rgba(0, 240, 255, 0.08);
-        transform: translateX(5px);
-    }
-
-    .query-label {
-        font-size: 0.95rem;
-        font-weight: 400;
-        color: #ffffff;
-        margin-bottom: 4px;
-    }
-
-    .query-desc {
-        font-size: 0.8rem;
-        color: rgba(0, 240, 255, 0.65);
-        font-weight: 300;
-        line-height: 1.3;
-    }
-
-    .status-bar {
-        margin-top: 40px;
-        padding: 16px 0;
-        border-top: 1px solid rgba(0, 240, 255, 0.08);
-        text-align: center;
-    }
-
-    .status-text {
-        font-size: 0.8rem;
-        color: #ff00aa;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-
-    .status-text:hover {
-        color: #ff66cc;
-        transform: scale(1.05);
-    }
-
-    .pulse-dot {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background: #ff00aa;
-        border-radius: 50%;
-        margin: 0 8px;
-        box-shadow: 0 0 10px #ff00aa88;
-        animation: pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-
-        0%,
-        100% {
-            opacity: 0.4;
-            transform: scale(1);
-        }
-
-        50% {
-            opacity: 1;
-            transform: scale(1.3);
-        }
-    }
-
-    @media (max-width: 768px) {
-        .main-panel {
-            padding: 40px 30px;
-            margin: 20px;
-        }
-
-        .ai-title {
-            font-size: 1.8rem;
-        }
-
-    }
-    </style>
+    <!-- PERFORMANS: Kritik kaynakları preload et -->
+    <link rel="preload" href="style.css?v=1783150434" as="style">
+    <link rel="preload" href="app.js?v=1783249793" as="script">
+    <!-- PERFORMANS: CSS harici dosyada - tarayıcı cache'leyebilir -->
+    <link rel="stylesheet" href="style.css?v=1783150434">
 </head>
 
-<body>
+<body data-active-tab="general">
+<header class="site-header">
 
-    <div class="ai-grid"></div>
-    <div class="crt-scan"></div>
+<!-- Tema Değiştirici -->
+<div class="theme-switcher">
+    <form method="post" action="" class="inline-form">
+        <input type="hidden" name="csrf_token" value="f7109632102c777f0a2aa640784e9a8fef7924c06c39da9197b3a723f3fe33d5">
+        <input type="hidden" name="set_theme" value="midnight">
+        <button type="submit" 
+        class="theme-toggle" 
+       aria-label="Tema değiştir"
+       title="Koyu Mavi Tema">
+        <span class="ui-icon ui-icon-moon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M19.5 14.3A7.5 7.5 0 0 1 9.7 4.5 8.2 8.2 0 1 0 19.5 14.3z"/></svg></span>    </button>
+    </form>
+</div>
 
-    <div class="container">
-        <div class="main-panel">
+<div class="ornament-top">Tetkik-i Esâmî</div>
 
-            <div class="ai-header">
-                <img src="assets/images/sex.png" alt="Bedava Sorgu Paneli - Ücretsiz T.C., GSM, Adres Sorgu"
-                    style="max-width: 200px; height: auto; margin-bottom: 10px; image-rendering: pixelated;">
-                <div class="ai-subtitle">BEDAVA SORGU PANELİ 2026</div>
-                <div style="font-size: 0.7rem; color: rgba(0, 240, 255, 0.5); margin-top: 5px;">
-                    ✅ %100 Ücretsiz ⚡ Hızlı Sonuç 🔒 Güvenli
-                </div><br>
+<!-- Osmanlı CV Görseli -->
+<div class="text-center my-2">
+    <picture>
+        <source srcset="osmanli.cv.webp" type="image/webp">
+        <img src="osmanli.cv.webp" 
+             alt="Osmanlı CV" 
+             class="img-fluid osmanli-cv-img" 
+             width="250" 
+             height="auto"
+             loading="lazy"
+             decoding="async">
+    </picture>
+</div>
+
+</header>
+
+<main class="container-fluid py-4" id="main-content">
+
+    <div class="row justify-content-center">
+
+        <div class="col-xl-11">
+
+            
+
+            <h1 class="page-title"><span class="page-title-ornament" aria-hidden="true">&#9884;</span><span class="page-title-text">OSMANLI</span><span class="page-title-ornament" aria-hidden="true">&#9884;</span><a href="https://t.me/osmanlicv" target="_blank" rel="noopener noreferrer" title="Telegram Kanalı" aria-label="Telegram Kanalı" class="page-title-link"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a></h1>
+
+            
+
+            <div class="card search-card mb-4">
+
+                <div class="card-header border-0 pt-3">
+
+                    <ul class="nav nav-tabs card-header-tabs" role="tablist">
+
+                        <li class="nav-item">
+                            <!-- JS kapalıyken link çalışır, JS açıkken button çalışır -->
+                            <a href="?tab=general" id="tab-general" class="nav-link active" data-bs-toggle="tab" data-bs-target="#general" role="tab" aria-controls="general" aria-selected="true"><span class="ui-icon ui-icon-search" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/><path d="M7.5 10.5h6"/></svg></span><span>Genel Arama</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="?tab=detail" id="tab-detail" class="nav-link " data-bs-toggle="tab" data-bs-target="#detail" role="tab" aria-controls="detail" aria-selected="false"><span class="ui-icon ui-icon-detail" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M7 3.5h8.5L19 7v13.5H7z"/><path d="M15.5 3.5V7H19"/><path d="M10 10h6"/><path d="M10 13.5h6"/><path d="M10 17h4"/></svg></span><span>Detaylı Arama</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="?tab=aile" id="tab-aile" class="nav-link " data-bs-toggle="tab" data-bs-target="#aile" role="tab" aria-controls="aile" aria-selected="false"><span class="ui-icon ui-icon-family" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="6" r="2.5"/><circle cx="7" cy="16" r="2.5"/><circle cx="17" cy="16" r="2.5"/><path d="M12 8.5v3"/><path d="m12 11.5-5 2"/><path d="m12 11.5 5 2"/></svg></span><span>Aile Sorgu</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="?tab=family" id="tab-family" class="nav-link " data-bs-toggle="tab" data-bs-target="#family" role="tab" aria-controls="family" aria-selected="false"><span class="ui-icon ui-icon-tree" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M12 20V9"/><path d="M8 20h8"/><path d="M12 13c-4.5 0-7-2-7-5.2C5 5.1 7.2 3 10 3c1.2 0 2.1.4 2.8 1.2C13.6 3.5 14.7 3 16 3c2.6 0 4.5 2 4.5 4.6C20.5 11 17.4 13 12 13z"/></svg></span><span>Soyağacı</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="?tab=gsm" id="tab-gsm" class="nav-link " data-bs-toggle="tab" data-bs-target="#gsm" role="tab" aria-controls="gsm" aria-selected="false"><span class="ui-icon ui-icon-phone" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><rect x="8" y="3" width="8" height="18" rx="2"/><path d="M11 6h2"/><path d="M11.5 18h1"/></svg></span><span>GSM Sorgu</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="?tab=adres" id="tab-adres" class="nav-link " data-bs-toggle="tab" data-bs-target="#adres" role="tab" aria-controls="adres" aria-selected="false"><span class="ui-icon ui-icon-address" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4.5 11.5 12 5l7.5 6.5"/><path d="M6.5 10.5V20h11v-9.5"/><path d="M10 20v-5h4v5"/><path d="M12 5V2.8"/></svg></span><span>Adres Sorgu</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="?tab=tapu" id="tab-tapu" class="nav-link " data-bs-toggle="tab" data-bs-target="#tapu" role="tab" aria-controls="tapu" aria-selected="false"><span class="ui-icon ui-icon-deed" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M7 3.5h9l3 3V20H7z"/><path d="M16 3.5v3h3"/><path d="M10 10h5"/><path d="M10 13h4"/><circle cx="15.5" cy="16.5" r="1.8"/><path d="m14.4 18 1.1 2 1.1-2"/></svg></span><span>Tapu Sorgu</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="?tab=isyeri" id="tab-isyeri" class="nav-link " data-bs-toggle="tab" data-bs-target="#isyeri" role="tab" aria-controls="isyeri" aria-selected="false"><span class="ui-icon ui-icon-work" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4.5 20V7.5h6V20"/><path d="M10.5 20V4h9v16"/><path d="M7 10h1"/><path d="M7 13h1"/><path d="M13 7h1"/><path d="M16 7h1"/><path d="M13 10h1"/><path d="M16 10h1"/><path d="M13 13h1"/><path d="M16 13h1"/></svg></span><span>İşyeri Sorgu</span></a>
+                        </li>
+
+                                                <li class="nav-item">
+                            <a href="#aichat" id="tab-aichat" class="nav-link" data-bs-toggle="tab" data-bs-target="#aichat" role="tab" aria-controls="aichat" aria-selected="false"><span class="ui-icon ui-icon-ai" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 2v3"/><path d="M15 2v3"/><path d="M9 19v3"/><path d="M15 19v3"/><path d="M2 9h3"/><path d="M2 15h3"/><path d="M19 9h3"/><path d="M19 15h3"/><path d="M9.5 13.5c1.2 1.1 3.8 1.1 5 0"/><path d="M9.5 10h.1"/><path d="M14.4 10h.1"/></svg></span><span>AI Chat</span></a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+
+
+                <div class="card-body">
+                                        <div class="tab-content">
+                        <!-- GENEL ARAMA -->
+                        <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="tab-general" tabindex="0">
+                            <form method="POST" action="">
+                                <input type="hidden" name="csrf_token" value="6df012e74911623e27ac57b96dad9e829d0a19886c50279b89c65a0836a462d2">
+                                <div class="row g-2 g-lg-3 align-items-end justify-content-center">
+                                    <div class="col-6 col-md-4 col-xl-2">
+                                        <label class="form-label">Ad</label>
+                                        <input type="text" name="g_ad" class="form-control" placeholder="@AD" value="" maxlength="50">
+                                    </div>
+                                    <div class="col-6 col-md-4 col-xl-2">
+                                        <label class="form-label">Soyad</label>
+                                        <input type="text" name="g_soyad" class="form-control" placeholder="@SOYAD" value="" maxlength="50">
+                                    </div>
+                                    <div class="col-6 col-md-4 col-xl-2">
+                                        <label class="form-label">Adres Il</label>
+                                        <input type="text" name="g_adresil" class="form-control" placeholder="Il" value="" maxlength="50">
+                                    </div>
+                                    <div class="col-6 col-md-4 col-xl-2">
+                                        <label class="form-label">Adres Ilce</label>
+                                        <input type="text" name="g_adresilce" class="form-control" placeholder="Ilce" value="" maxlength="50">
+                                    </div>
+                                    <div class="col-6 col-md-4 col-xl-2">
+                                        <label class="form-label">Dogum Yeri</label>
+                                        <input type="text" name="g_dogumyeri" class="form-control" placeholder="Dogum yeri" value="" maxlength="50">
+                                    </div>
+                                    <div class="col-6 col-md-4 col-xl-2">
+                                        <label class="form-label">Dogum Tarihi</label>
+                                        <input type="text" name="g_dogumtarihi" class="form-control" placeholder="Yil veya tarih" value="" maxlength="20">
+                                    </div>
+                                    <div class="col-12 col-md-4 col-xl-1">
+                                        <button class="btn btn-primary btn-search w-100" type="submit">ARA</button>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="compact-check-wrap">
+                                            <div class="form-check compact-check">
+                                                <input class="form-check-input" type="checkbox" name="g_single_name" value="1" id="gSingleName" >
+                                                <label class="form-check-label compact-check-label" for="gSingleName">Tek isim</label>
+                                            </div>
+                                            <details class="compact-check-details">
+                                                <summary class="compact-check-summary">Bilgi</summary>
+                                                <div class="compact-check-note">Sadece tek isimli kişiler listelenir.</div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+
+                        <!-- DETAYLI ARAMA -->
+
+                        <div class="tab-pane fade " id="detail" role="tabpanel" aria-labelledby="tab-detail" tabindex="0">
+
+                            <form method="POST" action="">
+                                <input type="hidden" name="csrf_token" value="fbc02822a14974aae605d115012c036c0e639c2a4b626338ab7c2d8522fd11f6">
+                                <input type="hidden" name="search_type" value="detail">
+
+                                
+
+                                <div class="section-title"><span class="ui-icon ui-icon-user" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span> Kişisel Bilgiler</div>
+
+                                <div class="row g-3">
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">TC Kimlik</label>
+
+                                                                                            <input type="text" name="tc" class="form-control" placeholder="" value="">
+                                            
+                                        </div>
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Ad</label>
+
+                                                                                            <input type="text" name="ad" class="form-control" placeholder="" value="">
+                                            
+                                        </div>
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Soyad</label>
+
+                                                                                            <input type="text" name="soyad" class="form-control" placeholder="" value="">
+                                            
+                                        </div>
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Cinsiyet</label>
+
+                                                                                            <select name="cinsiyet" class="form-select">
+                                                    <option value="">-</option>
+                                                    <option value="E" >E</option>
+                                                    <option value="K" >K</option>
+                                                </select>
+                                            
+                                        </div>
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Medeni Hal</label>
+
+                                                                                                                                            <select name="medenihal" class="form-select">
+                                                    <option value="">-</option>
+                                                    <option value="Bekar" >Bekar</option>
+                                                    <option value="Evli" >Evli</option>
+                                                    <option value="Dul" >Dul</option>
+                                                </select>
+                                            
+                                        </div>
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">GSM</label>
+
+                                                                                            <input type="text" name="gsm" class="form-control" placeholder="" value="">
+                                            
+                                        </div>
+
+                                    
+                                </div>
+
+                                <div class="row mt-2">
+                                    <div class="col-md-4">
+                                        <div class="compact-check-wrap">
+                                            <div class="form-check compact-check">
+                                                <input class="form-check-input" type="checkbox" name="single_name" value="1" id="detailSingleName" >
+                                                <label class="form-check-label compact-check-label" for="detailSingleName">Tek isim</label>
+                                            </div>
+                                            <details class="compact-check-details">
+                                                <summary class="compact-check-summary">Bilgi</summary>
+                                                <div class="compact-check-note">Sadece tek isimli kişiler listelenir.</div>
+                                            </details>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="section-title"><span class="ui-icon ui-icon-family" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="6" r="2.5"/><circle cx="7" cy="16" r="2.5"/><circle cx="17" cy="16" r="2.5"/><path d="M12 8.5v3"/><path d="m12 11.5-5 2"/><path d="m12 11.5 5 2"/></svg></span> Aile Bilgileri</div>
+
+                                <div class="row g-3">
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Baba Adı</label>
+
+                                            <input type="text" name="babaadi" class="form-control" value="">
+
+                                        </div>
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Baba TC</label>
+
+                                            <input type="text" name="babatc" class="form-control" value="">
+
+                                        </div>
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Anne Adı</label>
+
+                                            <input type="text" name="anneadi" class="form-control" value="">
+
+                                        </div>
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Anne TC</label>
+
+                                            <input type="text" name="annetc" class="form-control" value="">
+
+                                        </div>
+
+                                    
+                                </div>
+
+
+                                <div class="section-title"><span class="ui-icon ui-icon-address" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4.5 11.5 12 5l7.5 6.5"/><path d="M6.5 10.5V20h11v-9.5"/><path d="M10 20v-5h4v5"/><path d="M12 5V2.8"/></svg></span> Adres Bilgileri</div>
+
+                                <div class="row g-3">
+
+                                    <div class="col-6">
+
+                                        <label class="form-label">Adres İl</label>
+
+                                        <input type="text" name="adresil" class="form-control" value="">
+
+                                    </div>
+
+                                    <div class="col-6">
+
+                                        <label class="form-label">Adres İlçe</label>
+
+                                        <input type="text" name="adresilce" class="form-control" value="">
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="section-title"><span class="ui-icon ui-icon-pin" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11z"/><circle cx="12" cy="10" r="2"/></svg></span> Kütük & Doğum</div>
+
+                                <div class="row g-3">
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Memleket İl</label>
+
+                                            <input type="text" name="memleketil" class="form-control" placeholder="" value="">
+
+                                        </div>
+
+
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Memleket İlçe</label>
+
+                                            <input type="text" name="memleketilce" class="form-control" placeholder="" value="">
+
+                                        </div>
+
+
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Köy/Mahalle</label>
+
+                                            <input type="text" name="memleketkoy" class="form-control" placeholder="" value="">
+
+                                        </div>
+
+
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Doğum Yeri</label>
+
+                                            <input type="text" name="dogumyeri" class="form-control" placeholder="" value="">
+
+                                        </div>
+
+
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Doğum Tarihi</label>
+
+                                            <input type="text" name="dogumtarihi" class="form-control" placeholder="Yıl veya Tam Tarih" value="">
+
+                                        </div>
+
+
+
+                                    
+                                        <div class="col-6">
+
+                                            <label class="form-label">Ölüm Tarihi</label>
+
+                                            <input type="text" name="olumtarihi" class="form-control" placeholder="" value="">
+
+                                        </div>
+
+
+
+                                    
+                                </div>
+
+
+                                <div class="row mt-4 align-items-end">
+
+                                    <div class="col-md-12 text-end">
+
+                                        <button type="submit" class="btn btn-success btn-search px-5"><span class="ui-icon ui-icon-search" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/><path d="M7.5 10.5h6"/></svg></span> DETAYLI SORGULA</button>
+
+                                        <a href="?" class="btn btn-outline-secondary ms-2"><span class="ui-icon ui-icon-refresh" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M20 7v5h-5"/><path d="M4 17v-5h5"/><path d="M18.5 12A6.5 6.5 0 0 0 7 7.8L4 12"/><path d="M5.5 12A6.5 6.5 0 0 0 17 16.2L20 12"/></svg></span> Temizle</a>
+
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <!-- SOYAĞACI ARAMA -->
+                        <div class="tab-pane fade " id="family" role="tabpanel" aria-labelledby="tab-family" tabindex="0">
+                            <form method="POST" action="">
+                                <input type="hidden" name="csrf_token" value="6ef74879385e0a775df9ed0f1e9d1bae5d22cb4a598e2cf6587ca3bcc4aa3ea0">
+                                <input type="hidden" name="search_type" value="family">
+                                
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-md-6 col-lg-4 text-center">
+                                        <label class="form-label mb-3 form-label-lg">Sorgulanacak Kişi TC</label>
+                                        <input type="text" name="tc" class="form-control form-control-lg text-center" placeholder="11 Haneli TC Giriniz" value="" maxlength="11" required>
+                                        <button class="btn btn-warning btn-lg w-100 mt-4" type="submit"><span class="ui-icon ui-icon-tree" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M12 20V9"/><path d="M8 20h8"/><path d="M12 13c-4.5 0-7-2-7-5.2C5 5.1 7.2 3 10 3c1.2 0 2.1.4 2.8 1.2C13.6 3.5 14.7 3 16 3c2.6 0 4.5 2 4.5 4.6C20.5 11 17.4 13 12 13z"/></svg></span> SOYAĞACINI GETİR</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- GSM SORGULAMA -->
+                        <div class="tab-pane fade " id="gsm" role="tabpanel" aria-labelledby="tab-gsm" tabindex="0">
+                            <form method="POST" action="">
+                                <input type="hidden" name="csrf_token" value="1698c4c34c0abd7033e5c263fee486d19420e54e835ec2ba21f5f9ee5ac0aa94">
+                                <input type="hidden" name="search_type" value="gsm">
+                                
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-md-6 col-lg-5 text-center">
+                                        <label class="form-label mb-3 form-label-lg">GSM No veya TC Kimlik</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-dark text-warning border-warning"><span class="ui-icon ui-icon-phone" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><rect x="8" y="3" width="8" height="18" rx="2"/><path d="M11 6h2"/><path d="M11.5 18h1"/></svg></span></span>
+                                            <input type="text" name="gsm_term" class="form-control form-control-lg text-center" 
+                                                   placeholder="5XXXXXXXXX veya 11 Haneli TC" 
+                                                   value="" required>
+                                        </div>
+                                        <button class="btn btn-warning btn-lg w-100 mt-4" type="submit"><span class="ui-icon ui-icon-phone" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><rect x="8" y="3" width="8" height="18" rx="2"/><path d="M11 6h2"/><path d="M11.5 18h1"/></svg></span> SORGULA</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- ADRES SORGULAMA -->
+                        <div class="tab-pane fade " id="adres" role="tabpanel" aria-labelledby="tab-adres" tabindex="0">
+                            <form method="POST" action="">
+                                <input type="hidden" name="csrf_token" value="e6314f687899d7897cc197640ddfd65fef15f3941101cd6c3d854b166b687d5c">
+                                <input type="hidden" name="search_type" value="adres">
+                                
+                                <div class="row g-3 mt-3">
+                                    <div class="col-md-6 col-xl-3">
+                                        <label class="form-label mb-2">Kimlik No</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-dark text-warning border-warning"><span class="ui-icon ui-icon-address" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4.5 11.5 12 5l7.5 6.5"/><path d="M6.5 10.5V20h11v-9.5"/><path d="M10 20v-5h4v5"/><path d="M12 5V2.8"/></svg></span></span>
+                                            <input type="text" name="adres_tc" class="form-control form-control-lg text-center"
+                                                   placeholder="11 Haneli TC"
+                                                   value="" maxlength="11" inputmode="numeric">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-3">
+                                        <label class="form-label mb-2">AD SOYAD</label>
+                                        <input type="text" name="adres_adsoyad" class="form-control form-control-lg text-center"
+                                               placeholder="Ad Soyad"
+                                               value="" maxlength="100">
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-3">
+                                        <label class="form-label mb-2">Dogum Yeri</label>
+                                        <input type="text" name="adres_dogumyeri" class="form-control form-control-lg text-center"
+                                               placeholder="Dogum Yeri"
+                                               value="" maxlength="100">
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-3">
+                                        <label class="form-label mb-2">Adres</label>
+                                        <input type="text" name="adres_ikametgah" class="form-control form-control-lg text-center"
+                                               placeholder="Adres"
+                                               value="" maxlength="100">
+                                    </div>
+
+                                    <div class="col-12 text-end">
+                                        <button class="btn btn-warning btn-lg px-5 mt-2" type="submit"><span class="ui-icon ui-icon-address" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4.5 11.5 12 5l7.5 6.5"/><path d="M6.5 10.5V20h11v-9.5"/><path d="M10 20v-5h4v5"/><path d="M12 5V2.8"/></svg></span> ADRES SORGULA</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- TAPU SORGULAMA -->
+                        <div class="tab-pane fade " id="tapu" role="tabpanel" aria-labelledby="tab-tapu" tabindex="0">
+                            <form method="POST" action="">
+                                <input type="hidden" name="csrf_token" value="ac480f716219af0efb2dbd9ae7a59c4cca67b971fb68e5c8cb22964b290ef914">
+                                <input type="hidden" name="search_type" value="tapu">
+                                
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-md-6 col-lg-5 text-center">
+                                        <label class="form-label mb-3 form-label-lg">Sorgulanacak Kişi TC</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-dark text-warning border-warning"><span class="ui-icon ui-icon-deed" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M7 3.5h9l3 3V20H7z"/><path d="M16 3.5v3h3"/><path d="M10 10h5"/><path d="M10 13h4"/><circle cx="15.5" cy="16.5" r="1.8"/><path d="m14.4 18 1.1 2 1.1-2"/></svg></span></span>
+                                            <input type="text" name="tapu_tc" class="form-control form-control-lg text-center" 
+                                                   placeholder="11 Haneli TC Giriniz" 
+                                                   value="" maxlength="11" required>
+                                        </div>
+                                        <button class="btn btn-warning btn-lg w-100 mt-4" type="submit"><span class="ui-icon ui-icon-deed" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M7 3.5h9l3 3V20H7z"/><path d="M16 3.5v3h3"/><path d="M10 10h5"/><path d="M10 13h4"/><circle cx="15.5" cy="16.5" r="1.8"/><path d="m14.4 18 1.1 2 1.1-2"/></svg></span> TAPU SORGULA</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- İŞYERİ SORGULAMA -->
+                        <div class="tab-pane fade " id="isyeri" role="tabpanel" aria-labelledby="tab-isyeri" tabindex="0">
+                            <form method="POST" action="">
+                                <input type="hidden" name="csrf_token" value="2d6b85127ca4c984cfbd3a602f77d2464cff034ae23c11490c00da45c869e9b8">
+                                <input type="hidden" name="search_type" value="isyeri">
+                                
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-md-6 col-lg-5 text-center">
+                                        <label class="form-label mb-3 form-label-lg">Sorgulanacak Kişi TC</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-dark text-warning border-warning"><span class="ui-icon ui-icon-work" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4.5 20V7.5h6V20"/><path d="M10.5 20V4h9v16"/><path d="M7 10h1"/><path d="M7 13h1"/><path d="M13 7h1"/><path d="M16 7h1"/><path d="M13 10h1"/><path d="M16 10h1"/><path d="M13 13h1"/><path d="M16 13h1"/></svg></span></span>
+                                            <input type="text" name="isyeri_tc" class="form-control form-control-lg text-center" 
+                                                   placeholder="11 Haneli TC Giriniz" 
+                                                   value="" maxlength="11" required>
+                                        </div>
+                                        <small class="text-muted d-block mt-2">Girilen TC'nin çalıştığı işyerindeki tüm yönetici ve çalışanlar listelenir.</small>
+                                        <button class="btn btn-warning btn-lg w-100 mt-4" type="submit"><span class="ui-icon ui-icon-work" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4.5 20V7.5h6V20"/><path d="M10.5 20V4h9v16"/><path d="M7 10h1"/><path d="M7 13h1"/><path d="M13 7h1"/><path d="M16 7h1"/><path d="M13 10h1"/><path d="M16 10h1"/><path d="M13 13h1"/><path d="M16 13h1"/></svg></span> İŞYERİ SORGULA</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- AİLE SORGULAMA -->
+                        <div class="tab-pane fade " id="aile" role="tabpanel" aria-labelledby="tab-aile" tabindex="0">
+                            <form method="POST" action="">
+                                <input type="hidden" name="csrf_token" value="c61a27af5181bfdbe47b70b61fda425da792752ef8773c86bd4841ad447accb5">
+                                <input type="hidden" name="search_type" value="aile">
+                                
+                                <div class="row justify-content-center mt-3">
+                                    <div class="col-md-6 col-lg-5 text-center">
+                                        <label class="form-label mb-3 form-label-lg">Sorgulanacak Kişi TC</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-dark text-warning border-warning"><span class="ui-icon ui-icon-family" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="6" r="2.5"/><circle cx="7" cy="16" r="2.5"/><circle cx="17" cy="16" r="2.5"/><path d="M12 8.5v3"/><path d="m12 11.5-5 2"/><path d="m12 11.5 5 2"/></svg></span></span>
+                                            <input type="text" name="aile_tc" class="form-control form-control-lg text-center" 
+                                                   placeholder="11 Haneli TC Giriniz" 
+                                                   value="" maxlength="11" required>
+                                        </div>
+                                        <small class="text-muted d-block mt-2">Girilen TC'nin anne, baba ve kardeşleri listelenir.</small>
+                                        <button class="btn btn-warning btn-lg w-100 mt-4" type="submit"><span class="ui-icon ui-icon-family" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="6" r="2.5"/><circle cx="7" cy="16" r="2.5"/><circle cx="17" cy="16" r="2.5"/><path d="M12 8.5v3"/><path d="m12 11.5-5 2"/><path d="m12 11.5 5 2"/></svg></span> AİLE SORGULA</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                                                <!-- AI CHAT -->
+                        <div class="tab-pane fade" id="aichat" role="tabpanel" aria-labelledby="tab-aichat" tabindex="0">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-10">
+
+                                    <!-- Chat Header Bar -->
+                                    <div class="chat-header-bar">
+                                        <div class="chat-header-left">
+                                            <select
+                                                id="aiModelSelect"
+                                                class="form-select form-select-sm chat-model-select"
+                                                data-default-model="moonshotai/kimi-k2.6"
+                                                data-temp-defaults="{&quot;moonshotai\/kimi-k2.6&quot;:1,&quot;deepseek-ai\/deepseek-v4-flash&quot;:0.6,&quot;deepseek-ai\/deepseek-v4-pro&quot;:0.6,&quot;z-ai\/glm5.2&quot;:1,&quot;stepfun-ai\/step-3.7-flash&quot;:0.5}">
+                                                                                                    <option
+                                                        value="moonshotai/kimi-k2.6"
+                                                        data-default-temp="1.0"
+                                                        selected>
+                                                        Kimi K2.6                                                    </option>
+                                                                                                    <option
+                                                        value="deepseek-ai/deepseek-v4-flash"
+                                                        data-default-temp="0.6"
+                                                        >
+                                                        DeepSeek V4 Flash                                                    </option>
+                                                                                                    <option
+                                                        value="deepseek-ai/deepseek-v4-pro"
+                                                        data-default-temp="0.6"
+                                                        >
+                                                        DeepSeek V4 Pro                                                    </option>
+                                                                                                    <option
+                                                        value="z-ai/glm5.2"
+                                                        data-default-temp="1.0"
+                                                        >
+                                                        GLM5.2                                                    </option>
+                                                                                                    <option
+                                                        value="stepfun-ai/step-3.7-flash"
+                                                        data-default-temp="0.5"
+                                                        >
+                                                        Step 3.7 Flash                                                    </option>
+                                                                                            </select>
+                                        </div>
+                                        <div class="chat-header-right">
+                                            <!-- Temperature Popup Toggle -->
+                                            <div class="chat-temp-wrapper">
+                                                <button type="button" class="chat-temp-toggle" id="tempToggleBtn" title="Sıcaklık Ayarı" aria-label="Sıcaklık ayarlarını aç" aria-controls="tempPopup" aria-expanded="false"><span class="ui-icon ui-icon-thermometer" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0z"/><path d="M12 8v8"/></svg></span></button>
+                                                <div class="chat-temp-popup" id="tempPopup">
+                                                    <div class="chat-temp-popup-inner">
+                                                        <span class="chat-temp-popup-label">Sıcaklık:</span>
+                                                        <input type="range" class="chat-temp-slider" id="aiTempRange" min="0" max="2" step="0.1" value="1.0" name="temperature">
+                                                        <span id="aiTempLabel" class="chat-temp-value fw-bold text-warning" style="font-size:0.85rem;">1.0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <form method="POST" action="/#aichat" style="margin:0;">
+                                                <input type="hidden" name="action" value="clear_ai_chat">
+                                                <input type="hidden" name="csrf_token" value="98886968c0584c0055fd1350bb29fec584c58998adcb5982ea3333eb0cb8f79d">
+                                                <button type="submit" id="clearChatBtn" class="chat-clear-btn" title="Sohbeti Temizle" aria-label="Sohbeti temizle" onclick="return confirm('Sohbet geçmişi silinsin mi?');"><span class="ui-icon ui-icon-trash" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4 7h16"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M6 7l1 14h10l1-14"/><path d="M9 7V4h6v3"/></svg></span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <form id="aiChatForm" method="POST" action="/#aichat">
+                                        <input type="hidden" name="action" value="ai_chat_fallback">
+                                        <input type="hidden" name="csrf_token" value="09c14c071d5ac5a7a36d3436b1132c78a3871dcbc2d9d2ac0073a579823115a1">
+                                        <input type="hidden" name="model" id="aiChatModelInput" value="moonshotai/kimi-k2.6">
+                                        <input type="hidden" name="temperature" id="aiChatTempInput" value="1.0">
+                                        
+                                        <!-- Chat Messages -->
+                                        <div id="chatContainer" class="chat-container">
+                                            <div id="chatMessages">
+                                                <!-- Mesajlar buraya JavaScript ile yüklenecek veya No-JS durumunda PHP ile basılacak -->
+                                                                                            </div>
+                                        </div>
+                                        
+                                        <!-- Input Area -->
+                                        <div class="chat-input-area">
+                                            <textarea id="chatInput" name="message" class="form-control chat-textarea" rows="2" placeholder="Mesajınızı yazın..." required></textarea>
+                                            <button id="chatSendBtn" class="chat-send-btn" type="submit">
+                                                <span id="sendBtnText"><span class="ui-icon ui-icon-send" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false"><path d="M4 12 21 4l-8 17-2-7z"/><path d="m11 14 10-10"/></svg></span></span>
+                                                <span id="sendBtnSpinner" class="spinner-border spinner-border-sm d-none" role="status"></span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="chat-hint">
+                                        <small>Enter › Gönder &nbsp;·&nbsp; Shift+Enter › Yeni satır</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="query-categories">
 
-                <!-- Kişisel Sorgular -->
-                <div class="category" onclick="toggleCategory(this)">
-                    <div class="category-header">
-                        <div class="category-title">
-                            <span class="category-icon">👤</span> Kişisel Sorgular
-                        </div>
-                        <span class="category-arrow">▶</span>
-                    </div>
-                    <div class="query-list">
-                        <div class="query-item" onclick="executeQuery('adsoyad.php')">
-                            <div class="query-label">Ad Soyad Sorgu</div>
-                            <div class="query-desc">İsim, soyisim bazlı veriler ile sorgulama</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('tcsorgu.php')">
-                            <div class="query-label">T.C. Sorgu</div>
-                            <div class="query-desc">T.C. kimlik numarası ile kimlik bilgilerini sorgula</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('gsmtc.php')">
-                            <div class="query-label">GSM → T.C. Sorgu</div>
-                            <div class="query-desc">GSM numarası ile T.C. kimlik numarasını sorgula</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('tcgsm.php')">
-                            <div class="query-label">T.C. → GSM Sorgu</div>
-                            <div class="query-desc">T.C. kimlik numarası ile GSM bilgilerini sorgula</div>
-                        </div>
-                    </div>
-                </div>
+            
+            
 
-                <!-- Konut & Adres -->
-                <div class="category" onclick="toggleCategory(this)">
-                    <div class="category-header">
-                        <div class="category-title">
-                            <span class="category-icon">🏠</span> Konut & Adres
-                        </div>
-                        <span class="category-arrow">▶</span>
-                    </div>
-                    <div class="query-list">
-                        <div class="query-item" onclick="executeQuery('adres.php')">
-                            <div class="query-label">Adres Sorgu</div>
-                            <div class="query-desc">T.C. ile adres bilgilerini sorgula</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('hane.php')">
-                            <div class="query-label">Hane Sorgu</div>
-                            <div class="query-desc">T.C. ile hane bilgilerini sorgula</div>
-                        </div>
-                         <div class="query-item" onclick="executeQuery('sokak.php')">
-                            <div class="query-label">Sokak Sorgu</div>
-                            <div class="query-desc">T.C. ile sokak bilgilerini sorgula</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('tapu.php')">
-                            <div class="query-label">Tapu Sorgu</div>
-                            <div class="query-desc">T.C. ile tapu bilgilerini sorgula</div>
-                        </div>
-                    </div>
-                </div>
 
-                <!--  & Soy -->
-                <div class="category" onclick="toggleCategory(this)">
-                    <div class="category-header">
-                        <div class="category-title">
-                            <span class="category-icon">👨‍👩‍👧‍👦</span> & Soy
-                        </div>
-                        <span class="category-arrow">▶</span>
-                    </div>
-                    <div class="query-list">
-                        <div class="query-item" onclick="executeQuery('aile.php')">
-                            <div class="query-label"> Aile Sorgu</div>
-                            <div class="query-desc">T.C. ile bilgilerini sorgula</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('sülale.php')">
-                            <div class="query-label">Soyağacı Sorgu</div>
-                            <div class="query-desc">T.C. ile soyağacı bilgilerini sorgula</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="category" onclick="toggleCategory(this)">
-                    <div class="category-header">
-                        <div class="category-title">
-                            <span class="category-icon">🖼️</span> Vesikalık Çözümler
-                        </div>
-                        <span class="category-arrow">▶</span>
-                    </div>
-                    <div class="query-list">
-                        <div class="query-item" onclick="executeQuery('eokulvesika.php')">
-                            <div class="query-label">E-Okul Vesika Sorgu</div>
-                            <div class="query-desc">E-Okul vesikalık fotoğraf sorgulama işlemi</div>
-                        </div>
-                    </div>
-                </div>
+            
 
-                <!-- VIP+ Pro Sorgular -->
-                <div class="category business-category" onclick="toggleCategory(this)">
-                    <div class="category-header">
-                        <div class="category-title">
-                            <span class="category-icon">👑</span> VIP+ Pro Sorgular
-                        </div>
-                        <span class="category-arrow">▶</span>
-                    </div>
-                    <div class="query-list">
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Güncel T.C. Pro Sorgu</div>
-                            <div class="query-desc">Gelişmiş T.C. kimlik analizi ve detayları</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Güncel Adres Sorgu</div>
-                            <div class="query-desc">En güncel adres bilgileri ve geçmiş</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Güncel Tapu Sorgu</div>
-                            <div class="query-desc">Güncel tapu kayıtları ve mülkiyet bilgileri</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Güncel T.C. → GSM</div>
-                            <div class="query-desc">T.C. ile güncel GSM numaralarını sorgula</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Güncel GSM → T.C.</div>
-                            <div class="query-desc">GSM ile güncel T.C. kimlik sorgulama</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Güncel Sorgu</div>
-                            <div class="query-desc">Güncel bilgileri ve kayıtları</div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- VIP+ Lokasyon & Araç -->
-                <div class="category business-category" onclick="toggleCategory(this)">
-                    <div class="category-header">
-                        <div class="category-title">
-                            <span class="category-icon">🚗</span> VIP+ Lokasyon & Araç
-                        </div>
-                        <span class="category-arrow">▶</span>
-                    </div>
-                    <div class="query-list">
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Whatsapp Takibi</div>
-                            <div class="query-desc">GSM numarası ile whatsapp takibi</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">GSM → Anlık Konum</div>
-                            <div class="query-desc">GSM numarası ile anlık konum tespiti (NETGSM HARİCİ TÜM ÖPERATÖRLER
-                                ÇIKAR)</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Güncel Plaka Sorgu</div>
-                            <div class="query-desc">Araç plaka sorguları ve detayları</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">T.C. → Araç Sorgu</div>
-                            <div class="query-desc">T.C. ile araç kayıtları ve detayları</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">Güncel Ada Parsel Sorgu</div>
-                            <div class="query-desc">Ada parsel bilgileri ve analizi</div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- VIP+ Geçmiş & Kayıtlar -->
-                <div class="category business-category" onclick="toggleCategory(this)">
-                    <div class="category-header">
-                        <div class="category-title">
-                            <span class="category-icon">📋</span> VIP+ Geçmiş & Kayıtlar
-                        </div>
-                        <span class="category-arrow">▶</span>
-                    </div>
-                    <div class="query-list">
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">T.C. → Hastane Geçmişi</div>
-                            <div class="query-desc">Hastane geçmiş kayıtları</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">T.C. → Konaklama Geçmişi</div>
-                            <div class="query-desc">Otel ve konaklama geçmiş kayıtları</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">T.C. → Yeni Kimlik Vesika</div>
-                            <div class="query-desc">Yeni kimlik belgesi bilgileri</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">T.C. → Eğitim Hayatı</div>
-                            <div class="query-desc">Eğitim geçmişi ve okul kayıtları</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">GSM → HTS Kaydı</div>
-                            <div class="query-desc">GSM ile HTS sistemi kayıtları</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- VIP+ İş & Finans -->
-                <div class="category business-category" onclick="toggleCategory(this)">
-                    <div class="category-header">
-                        <div class="category-title">
-                            <span class="category-icon">💰</span> VIP+ İş & Finans
-                        </div>
-                        <span class="category-arrow">▶</span>
-                    </div>
-                    <div class="query-list">
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">IBAN → T.C.</div>
-                            <div class="query-desc">IBAN numarası ile T.C. kimlik sorgulama</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">T.C. → İşyeri Sorgu</div>
-                            <div class="query-desc">İşyeri kayıtları ve ticari bilgiler</div>
-                        </div>
-                        <div class="query-item" onclick="executeQuery('pay.html')">
-                            <div class="query-label">T.C. → Şirket Sorgu</div>
-                            <div class="query-desc">Şirket ortaklıkları ve ticari faaliyetler</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="status-bar">
-                <div class="status-text" onclick="openTelegram()">
-                    <i class="pulse-dot"></i> TIKLA TELEGRAM KANALIMIZA KATIL
-                </div>
-            </div>
 
         </div>
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-    window.addEventListener("load", function() {
-        Swal.fire({
-            title: "Telegram Kanalımıza Katıl!",
-            text: "Eski Grubumuz Kapanmıştır Yeni Telegram Adresimiz.",
-            icon: "info",
-            showConfirmButton: true,
-            showDenyButton: true,
-            confirmButtonText: "Telegram'a Katıl",
-            denyButtonText: "Daha Sonra",
-            allowOutsideClick: false,
-            allowEscapeKey: false,
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.location.href = "https://t.me/belsisorg";
-            }
-        });
-    });
 
-    function toggleCategory(categoryElement) {
-        if (event.target.closest('.query-item')) return;
-        categoryElement.classList.toggle('expanded');
-    }
+</main>
 
-    function executeQuery(protocol) {
-        event.stopPropagation();
-        const item = event.target.closest('.query-item');
-        item.style.background = 'rgba(0, 240, 255, 0.18)';
-        setTimeout(() => {
-            window.location.href = `${protocol}`;
-        }, 200);
-    }
 
-    function openTelegram() {
-        window.open('https://t.me/belsisorg', '_blank');
-    }
+<!-- Bootstrap 5.3.3 JS + SRI -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const panel = document.querySelector('.main-panel');
-        panel.style.opacity = '0';
-        panel.style.transform = 'translateY(20px)';
-        setTimeout(() => {
-            panel.style.transition = 'all 0.8s ease';
-            panel.style.opacity = '1';
-            panel.style.transform = 'translateY(0)';
-        }, 100);
 
-        const firstCategory = document.querySelector('.category');
-        if (firstCategory) firstCategory.classList.add('expanded');
-    });
-    </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"0abaf8ffff8f443b93ae28bb0309e3c7","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script src="app.js?v=1783249793" defer></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" nonce="19ee4a41a0612c5e61cb80a2416b1f65" data-cf-beacon='{"version":"2024.11.0","token":"e5ca61ca51e5475e96ce9ac289f585d2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 
 </html>
+
